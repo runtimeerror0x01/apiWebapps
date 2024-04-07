@@ -50,7 +50,7 @@ resource webAppResources 'Microsoft.Web/sites@2021-02-01' = [for (webApp, i) in 
         }
         {
           name: 'DOCKER_REGISTRY_SERVER_PASSWORD'
-          value: '7g4tnSqLOPv+7qB249tJk46mZ/MD9c8Zck5wL6o9mL+ACRD5omki'
+          value: ''
         }
       ]
       linuxFxVersion: 'DOCKER|${registryName}/${webApp.imageName}'
