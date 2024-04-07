@@ -1,0 +1,9 @@
+FROM nginx:latest
+
+
+RUN rm /home/site/wwwroot/hostingstart.html
+
+# Copy contents of the html folder to Nginx default content directory
+COPY html/. /home/site/wwwroot
+
+
